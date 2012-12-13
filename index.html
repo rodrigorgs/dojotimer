@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>phonegap & jquery mobile boilerplate</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+  <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+  
+  <script>
+    var userAgent = navigator.userAgent + '';
+    if (userAgent.indexOf('iPhone') > -1) {
+      document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+      var mobile_system = 'iphone';
+    } else if (userAgent.indexOf('Android') > -1) {
+      document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+      var mobile_system = 'android';
+    } else {
+      var mobile_system = '';
+    }
+  </script>
+  
+  <script src="js/lib/jquery.js"></script>
+  <!-- your scripts here -->
+  <script src="js/app/app.js"></script>
+  <script src="js/app/bootstrap.js"></script>
+  <script src="js/lib/jquery.mobile.js"></script>
+  
+  </head>
+  <body>
+    
+    <div data-role="page" id="main">
+
+    	<div data-role="header">
+    		<h1>Single page</h1>
+    	</div><!-- /header -->
+
+    	<div data-role="content">	
+    		<p>This is a single page boilerplate template that you can copy to build your first jQuery Mobile page. Each link or form from here will pull a new page in via Ajax to support the animated page transitions.</p>
+    		<p>This template is standard HTML document with a single "page"</p>
+        <p><a href="#second" data-role="button">Next</a></p>
+    	</div><!-- /content -->
+
+    	<div data-role="footer">
+    		<h4>Footer content</h4>
+    	</div><!-- /footer -->
+
+    </div><!-- /page -->
+    
+    <div data-role="page" id="second">
+      <script type="text/javascript">
+
+        function incrementa() {
+        	  setInterval(function(){decrementa()},1000)
+        }
+        
+        function decrementa() {
+          var currentStr = $("#counter").html();
+          var current = parseInt(currentStr);
+          if(current==0){
+              current = parseInt($("#tempo" ).val())+1;
+              alert("Proximo");
+          }
+          $("#counter").html(current - 1);
+        }
+
+        function tempo(){
+        	$("#counter").html ($("#tempo").val());
+        	 
+
+        }
+		var participantes = new Array();
+	    function adicionarParticipante(){
+		    participantes[participantes.length] = $("#participante").val();
+		}
+		    
+      </script>
+      <h1 id="counter">3</h1>
+     
+      <p><a href="#" onclick="incrementa();" data-role="button">Start</a></p>
+      <p><a href="#" data-role="button" data-rel="back">Back</a></p>
+      	Tempo:<input id="tempo" type="text"/>
+      	<p><a href="#" data-role="button" data-rel="tempo" onclick="tempo()">ok</a></p>
+    		Participantes:
+    		<input id="participante" type="text"/>
+      	<p><a href="#" data-role="button" onclick="adicionarParticipante()">Adicionar</a></p>
+      	
+    </div>
+  </body>
+</html>
