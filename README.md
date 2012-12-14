@@ -40,3 +40,30 @@ Contador de tempo para dojos
 * http://docs.phonegap.com/
 
 
+---------------------------------------------------------------------------
+
+# Retrospectiva
+
+## Pontos positivos
+
+- primeiro contato divertido
+- Problema útil!
+- Interação entre a turma
+- Experiência com linguagens ainda não utilizadas
+- Programar e aprender um pouco mais sobre javascript, quase não tenho - experiencia
+- Experiência com jQuery Mobile
+- Ver mais uma opção de como programar para mobile
+
+Resumindo: divertido, útil, social, aprender novas tecnologias.
+
+## Pontos negativos
+
+- Pouco tempo de aula para todos participarem
+- Poucos Participantes
+- Tempo curto, apressou a escrita do código, deixando-o um pouco mangueado.
+- O tempo pequeno para fazer algo útil
+- não deu tempo terminar
+- Não saber javascript.
+- A linguagem não foi apresentada antes da execução do dojo .
+
+Resumindo: tempo curto, poucos participantes, codificação apressada e incompleta, a linguagem não foi apresentada.
